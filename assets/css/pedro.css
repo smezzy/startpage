@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700&display=swap');
+
+html{
+    font-family: 'Noto Sans JP', 'sans-serif';
+}
+
+.data {
+    font-size: 24px;
+}
+p {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-bottom: 15px;
+}
+.center-h1{
+    margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hora {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+data {
+    font-family: 'Montserrat';
+    color: #fff;
+}
+p {
+    font-family: 'Montserrat';
+    color: #fff;
+    font-size: 14px;
+}
+
+body {
+    margin-top: 9%;
+    z-index: 300;
+}
+
+.imagem-fundo {
+    position: fixed;
+    display: block;
+    left: -5%;
+    top: -5%;
+    width: 120%;
+    height: 120%;
+    background-image: linear-gradient(-45deg, #cea8a8, #a9a9f0);
+    background-image: url('/assets/img/5448919.jpg');
+    z-index: -1;
+    background-size: cover;
+    -webkit-filter: blur(3px);
+}
+
+/*-------- barra de pesquisa --------*/
+
+.searchbar {
+    color: white;
+    width: 684px;
+    height: 65px;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    background-color:rgba(8, 8, 8, 0.6);
+    /*background-color: rgba(255, 255, 255, 0.15);*/
+    outline: 0;
+    font-size: 24px;
+}
+
+
+.searchbar::placeholder {
+    color: rgb(145, 145, 145);
+    font-family: 'Roboto';
+}
+
+
+/*-------- grid container --------*/
+
+.container {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+/*-------- el grid louco --------*/
+
+.el-grid{
+    width: 50%;
+    height: 50%;
+    grid-auto-flow: row;
+    display: grid;  
+    padding: 35px;
+    grid-gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: stretch;
+}
+
+/*-------- cada link no grid --------*/
+
+.card {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    /*background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) , rgba(255, 255, 255, 0.25));*/
+    background-color:rgba(8, 8, 8, 0.6);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    height: 136px;
+    max-width: 236px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.1s ease-in;
+}
+
+.card:hover {
+    background-image: linear-gradient(45deg, rgba(153, 153, 153, 0.329) , rgba(141, 141, 141, 0.432));
+    transform: translateY(-.2em);
+}
+
+.card i {
+    font-size: 2.6em;
+}
