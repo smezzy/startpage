@@ -10,10 +10,10 @@ const clock = (timeEl, dateEl) => {
 
     dateEl.textContent = _IntlDate.format(new Date());
 
-    _setTime()
+    _setTime();
     setTimeout(() => {
         _setTime();
-        setInterval(_setTime, 60000)
+        setInterval(_setTime, 60000);
     }, (60 - new Date().getSeconds()) * 1000);
 };
 
