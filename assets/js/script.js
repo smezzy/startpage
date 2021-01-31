@@ -1,8 +1,8 @@
 const clock = (timeEl, dateEl) => {
     console.log("timeEl", timeEl);
 
-    const _IntlTime = new Intl.DateTimeFormat(navigator.language ?? "en-us", {hour: "numeric", minute: "numeric"})
-    const _IntlDate = new Intl.DateTimeFormat(navigator.language ?? "en-us", {year: 'numeric', month: 'long', day: 'numeric'})
+    const _IntlTime = new Intl.DateTimeFormat(navigator.language ?? "en-us", {hour: "numeric", minute: "numeric"});
+    const _IntlDate = new Intl.DateTimeFormat(navigator.language ?? "en-us", {year: 'numeric', month: 'long', day: 'numeric'});
 
     const _setTime = () => {
         timeEl.textContent = _IntlTime.format(new Date());
